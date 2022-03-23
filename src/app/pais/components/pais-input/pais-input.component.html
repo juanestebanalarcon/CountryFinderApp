@@ -1,0 +1,12 @@
+<form action="" (ngSubmit)="buscar()">
+    <input 
+    type="text" 
+    name="termino" 
+    placeholder="Buscar país..." 
+    class="form-control" 
+    autocomplete="off" 
+    [(ngModel)]="termino"
+    (input)="pressedKey()"
+    [placeholder]="placeholder"/>
+    <!--Cuando le paso [placeholder] le estoy dando la propiedad global del .ts para reutilizarlo.-->
+</form>
